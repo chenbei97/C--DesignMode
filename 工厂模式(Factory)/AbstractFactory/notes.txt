@@ -29,3 +29,17 @@ virtual Monster* createMechanicMonster() = 0;
 抽象工厂的好处在于，如果增加新的场景森林，怪物不变，只需要增加一个森林工厂子类即可，其他无需改动
 坏处在于，如果增加一个龙类怪物，那么MonsterFactory需要增加1个对龙类怪物支持虚函数，然后所有场景工厂子类也要相应增加对该虚函数的实现
 这种情况就不适合使用抽象工厂模式
+
+另一个例子可见other文件夹下
+有中国、日本和美国的厂商，都可以生成芭比娃娃，芭比娃娃由固定3个组件组成，身体、衣服和鞋子
+所以other下的文件对应关系为:
+- DollPart.h 定义了DollPart抽象部件类,3个子类Body、Clothes和Shoes继承DollPart作为抽象具体部件类
+- ChinaDollPart.h 定义了ChinaBody,ChinaClothes,ChinaShoes
+  JapanDollPart.h 定义了JapanBody,JapanClothes,JapanShoes
+  UsaDollPart.h   定义了UsaBody,UsaClothes,UsaShoes
+- DollFactory.h 定义了抽象厂商类DollFactory,内部有3个虚函数用于创建身体、衣服和鞋子
+- ChinaFactory.h 定义ChinaFactory,对3个虚函数重实现
+  JapanFactory.h 定义JapanFactory,对3个虚函数重实现
+  UsaFactory.h 定义UsaFactory,对3个虚函数重实现
+- BarbieDoll.h 芭比娃娃类,构造函数由身体、鞋子和衣服组成
+- main.cpp 主程序
