@@ -11,8 +11,12 @@
 
 实际情况是与组装关联的有4个函数，即assemble(),loadTrunk(),loadHead(),loadLimbs()
 这4个函数内部的实现肯定是非常复杂的,起始可以把这4个函数的内容单门作为2个类实现，体现构建过程的独立性
-一个类是构建者类，封装了loadTrunk(),loadHead(),loadLimbs()这3个函数，组合了MonsterV2属性
-一个类是指挥者类，封装了assemble()函数内部的内容取名为build()函数，组合了MonsterBuilder属性
+一个类是构建者类，封装了loadTrunk(),loadHead(),loadLimbs()这3个函数，组合了MonsterV2*，提供了一个返回函数getMonster()
+一个类是指挥者类，封装了assemble()函数内部的内容取名为build()函数，组合了MonsterBuilder属性，返回MonsterV2*，实际类型取决于MonsterBuilder类型
 定义在MonsterBuilder.h、MonsterConstructor.h和UndeadBuilder.h、ElementBuilder.h、MechanicBuilder.h中
 
 指挥者内通过构造函数或者setBuilder()函数设置构建者，然后调用build函数，内部让构建者对其内部的Monster进行构建，之后返回
+设置不同的构建者MonsterBuilder*就可以返回不同的MonsterV2*
+
+需要说明的是，指挥者可以是不必要的，也就是assemble函数可以在构建者内直接实现，
+如果Builder本身比较庞大，或者子类繁多，或者有调整构建次序的需求可以拆分出来
