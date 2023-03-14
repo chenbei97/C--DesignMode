@@ -1,0 +1,175 @@
+<mxfile host="65bd71144e">
+    <diagram id="EA_mpjZKMgW_DX3yp9mA" name="第 1 页">
+        <mxGraphModel dx="347" dy="144" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="17" value="" style="group" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="500" y="30" width="225" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="" style="whiteSpace=wrap;html=1;fontSize=10;" vertex="1" parent="17">
+                    <mxGeometry x="5" width="120" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" style="edgeStyle=none;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;fontSize=10;endArrow=none;endFill=0;" edge="1" parent="17" source="12" target="12">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="Fighter" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=10;" vertex="1" parent="17">
+                    <mxGeometry x="40" width="50" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="+setFamilyId()&lt;br&gt;+getFamilyId()&lt;br&gt;&lt;font color=&quot;#ff6666&quot;&gt;+speak(Notify*) (user)&lt;/font&gt;&lt;br&gt;+notify(Fighter*) (other)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=10;" vertex="1" parent="17">
+                    <mxGeometry y="30" width="130" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="70" value="&lt;font color=&quot;#ff6666&quot;&gt;Notify-&amp;gt;notify(this)&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=10;" vertex="1" parent="17">
+                    <mxGeometry x="125" y="50" width="100" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="" style="group" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="390" y="170" width="130" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" value="" style="whiteSpace=wrap;html=1;fontSize=10;" vertex="1" parent="18">
+                    <mxGeometry x="5" width="120" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" style="edgeStyle=none;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;fontSize=10;endArrow=none;endFill=0;" edge="1" parent="18" source="19" target="19">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" value="Warrior" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=10;" vertex="1" parent="18">
+                    <mxGeometry x="35" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" value="+setFamilyId()&lt;br&gt;+getFamilyId()&lt;br&gt;+speak(Notify*) (user)&lt;br&gt;+notify(Fighter*) (other)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=10;" vertex="1" parent="18">
+                    <mxGeometry y="30" width="130" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" value="" style="group" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="610" y="170" width="130" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" value="" style="whiteSpace=wrap;html=1;fontSize=10;" vertex="1" parent="23">
+                    <mxGeometry x="5" width="120" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" style="edgeStyle=none;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;fontSize=10;endArrow=none;endFill=0;" edge="1" parent="23" source="24" target="24">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="26" value="Warrior" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=10;" vertex="1" parent="23">
+                    <mxGeometry x="35" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="27" value="+setFamilyId()&lt;br&gt;+getFamilyId()&lt;br&gt;+speak(Notify*) (user)&lt;br&gt;+notify(Fighter*) (other)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=10;" vertex="1" parent="23">
+                    <mxGeometry y="30" width="130" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="28" style="edgeStyle=orthogonalEdgeStyle;html=1;fontSize=10;endArrow=classic;endFill=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;rounded=0;" edge="1" parent="1" source="21" target="12">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="455" y="140" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="455" y="150"/>
+                            <mxPoint x="565" y="150"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=10;endArrow=none;endFill=0;" edge="1" parent="1" source="26">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="560" y="150" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="675" y="150"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="31" value="具体观察者" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=10;" vertex="1" parent="1">
+                    <mxGeometry x="530" y="220" width="70" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="37" value="" style="group" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="210" y="30" width="140" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="33" value="" style="whiteSpace=wrap;html=1;fontSize=10;fillColor=#647687;fontColor=#ffffff;strokeColor=#314354;" vertex="1" parent="37">
+                    <mxGeometry x="10" width="120" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="34" style="edgeStyle=none;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;fontSize=10;endArrow=none;endFill=0;" edge="1" parent="37" source="33" target="33">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="35" value="Notify" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=10;" vertex="1" parent="37">
+                    <mxGeometry x="45" width="50" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="36" value="&lt;i&gt;+addToList(Fighter*)&lt;br&gt;+removeFromList(Fighter*)&lt;br&gt;+notify(Fighter*) (other)&lt;/i&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=10;" vertex="1" parent="37">
+                    <mxGeometry y="35" width="140" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="38" value="" style="group" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="210" y="170" width="150" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="39" value="" style="whiteSpace=wrap;html=1;fontSize=10;fillColor=#647687;fontColor=#ffffff;strokeColor=#314354;" vertex="1" parent="38">
+                    <mxGeometry x="10" width="120" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="40" style="edgeStyle=none;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;fontSize=10;endArrow=none;endFill=0;" edge="1" parent="38" source="39" target="39">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="41" value="ChatLineNotify" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=10;" vertex="1" parent="38">
+                    <mxGeometry x="25" width="90" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="42" value="&lt;i&gt;+addToList(Fighter*)&lt;br&gt;+removeFromList(Fighter*)&lt;br&gt;+notify(Fighter*) (other)&lt;br&gt;-map&amp;lt;int,list&amp;lt;Fighter*&amp;gt;&amp;gt;&lt;br&gt;:mFamilyList&lt;br&gt;&lt;/i&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=10;" vertex="1" parent="38">
+                    <mxGeometry y="25" width="140" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="43" value="根据Fighter*的id对mFamilyList搜索&lt;br&gt;如果找到就添加或移除list的fighter&lt;br&gt;以及调用fighter的notify方法" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=10;" vertex="1" parent="1">
+                    <mxGeometry x="323" y="55" width="180" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fontSize=10;endArrow=classic;endFill=1;dashed=1;" edge="1" parent="1" source="19" target="39">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="455" y="320"/>
+                            <mxPoint x="280" y="320"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;fontSize=10;endArrow=none;endFill=0;" edge="1" parent="1" source="24">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="450" y="320" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="675" y="320"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fontSize=10;endArrow=classic;endFill=1;" edge="1" parent="1" source="41" target="33">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="69" value="" style="group" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="250" y="340" width="465" height="125" as="geometry"/>
+                </mxCell>
+                <mxCell id="48" value="" style="whiteSpace=wrap;html=1;fontSize=10;" vertex="1" parent="69">
+                    <mxGeometry x="320" width="120" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="47" value="玩家发布消息&lt;br&gt;Fighterx-&amp;gt;speak(Notify*)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=10;" vertex="1" parent="69">
+                    <mxGeometry x="315" width="130" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="49" value="" style="whiteSpace=wrap;html=1;fontSize=10;fillColor=#fa6800;fontColor=#000000;strokeColor=#C73500;" vertex="1" parent="69">
+                    <mxGeometry x="300" y="80" width="160" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="64" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=10;endArrow=classic;endFill=1;" edge="1" parent="69" source="47" target="49">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="51" value="通知者内部的观察者列表轮询&lt;br&gt;Notify-&amp;gt;notify(Fighter*f)&lt;br&gt;找到和f家族一致的玩家列表" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=10;" vertex="1" parent="69">
+                    <mxGeometry x="315" y="75" width="150" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="54" value="" style="whiteSpace=wrap;html=1;fontSize=10;" vertex="1" parent="69">
+                    <mxGeometry width="120" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="55" value="创建观察者Fighterx&lt;br&gt;和通知者Notify" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=10;" vertex="1" parent="69">
+                    <mxGeometry x="5" width="110" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="60" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=10;endArrow=classic;endFill=1;" edge="1" parent="69" source="56" target="48">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="56" value="Notify.addToList(Fighterx)&lt;br&gt;通知者添加观察者到列表维护" style="whiteSpace=wrap;html=1;fontSize=10;" vertex="1" parent="69">
+                    <mxGeometry x="160" width="120" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="59" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=10;endArrow=classic;endFill=1;" edge="1" parent="69" source="54" target="56">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="63" value="" style="whiteSpace=wrap;html=1;fontSize=10;" vertex="1" parent="69">
+                    <mxGeometry x="90" y="80" width="160" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="68" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;fontSize=10;endArrow=classic;endFill=1;" edge="1" parent="69" source="49" target="63">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="62" value="同一家族所有玩家都调用notify()&lt;br&gt;for(auto f: matchFamily)&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;f-&amp;gt;notify()" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=10;" vertex="1" parent="69">
+                    <mxGeometry x="85" y="75" width="160" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="65" value="mFamilyList[f.getFamilyId()]&lt;br&gt;matchFamily" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=10;" vertex="1" parent="69">
+                    <mxGeometry x="233" y="40" width="150" height="40" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
