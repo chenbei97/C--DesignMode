@@ -82,35 +82,6 @@ namespace V3 {
     std::mutex LogConfig::mMutex;
 }
 
-namespace V3 {
-    class LogConfig
-    {
-        private:
-            LogConfig(){}
-            LogConfig(const LogConfig&);
-            LogConfig operator= (const LogConfig&);
-            ~LogConfig(){}
-        public:
-            static LogConfig* getInstance()
-            {
-                if (mLogConfig == nullptr)
-                {
-                    std::lock_guard<std::mutex> lg(mMutex);
-                    if (mLogConfig == nullptr)
-                    {
-                        mLogConfig = new LogConfig();
-                    }
-                }
-                return mLogConfig;
-            }
-        private:
-            static LogConfig * mLogConfig;
-            static std::mutex mMutex;
-    };
-    LogConfig * LogConfig::mLogConfig = nullptr;
-    std::mutex LogConfig::mMutex;
-}
-
 namespace V4 {
     class LogConfig
     {
