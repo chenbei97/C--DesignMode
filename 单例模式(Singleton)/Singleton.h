@@ -152,7 +152,7 @@ namespace V6 {
                 }
                 return mLogConfig;
             }
-            static void freeInstance() // 基于V5增加此函数,需要外部手工调用释放对象
+            static void freeInstance() // 基于V1增加此函数,需要外部手工调用释放对象
             {
                 if (mLogConfig != nullptr)
                 {
