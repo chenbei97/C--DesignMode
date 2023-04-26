@@ -1,0 +1,183 @@
+<mxfile host="65bd71144e">
+    <diagram id="YKBNJY8En7M64wCvM9GK" name="第 1 页">
+        <mxGraphModel dx="1589" dy="1604" grid="1" gridSize="5" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="49" value="" style="whiteSpace=wrap;html=1;fontSize=10;" vertex="1" parent="1">
+                    <mxGeometry x="-15" y="-10" width="670" height="355" as="geometry"/>
+                </mxCell>
+                <mxCell id="40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontSize=10;endArrow=classic;endFill=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;" edge="1" parent="1" source="2" target="36">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="90" y="225" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=10;endArrow=classic;endFill=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;" edge="1" parent="1" source="2" target="4">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="80" y="75" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="68" y="80"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="2" value="客户端" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="35" y="120" width="65" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="" style="group" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="200" y="40" width="127.5" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="" style="whiteSpace=wrap;html=1;" vertex="1" parent="8">
+                    <mxGeometry width="120" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="Waiter" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="8">
+                    <mxGeometry x="32.5" y="-5" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.25;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="8" target="4">
+                    <mxGeometry width="100" relative="1" as="geometry">
+                        <mxPoint y="20" as="sourcePoint"/>
+                        <mxPoint x="100" y="20" as="targetPoint"/>
+                        <Array as="points"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="9" value="&lt;span style=&quot;font-size: 12px;&quot;&gt;+addCommand()&lt;br&gt;+removeCommand()&lt;br&gt;+notify()&lt;br&gt;&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=10;" vertex="1" parent="8">
+                    <mxGeometry x="-2.5" y="20" width="130" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="Command-&amp;gt;execute();" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;fontSize=10;" vertex="1" parent="1">
+                    <mxGeometry x="60" y="20" width="120" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;fontSize=10;endArrow=none;endFill=0;exitX=0.405;exitY=0.992;exitDx=0;exitDy=0;exitPerimeter=0;dashed=1;rounded=0;" edge="1" parent="1" source="10">
+                    <mxGeometry width="100" relative="1" as="geometry">
+                        <mxPoint x="110" y="105" as="sourcePoint"/>
+                        <mxPoint x="210" y="105" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="109" y="105"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="12" value="" style="group;fontSize=10;" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="380" y="40" width="120" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="" style="whiteSpace=wrap;html=1;fontSize=10;fillColor=#647687;fontColor=#ffffff;strokeColor=#314354;dashed=1;" vertex="1" parent="12">
+                    <mxGeometry width="120.00000000000001" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" style="edgeStyle=none;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;fontSize=10;endArrow=none;endFill=0;rounded=0;dashed=1;" edge="1" parent="12" source="13" target="13">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="Command" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=10;dashed=1;" vertex="1" parent="12">
+                    <mxGeometry x="28.080000000000002" width="65" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="+Command(Cook*)&lt;br&gt;&lt;i&gt;+execute()&lt;/i&gt;&lt;br&gt;#mCooker" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=10;dashed=1;" vertex="1" parent="12">
+                    <mxGeometry x="8.08" y="27" width="105" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="" style="group;fontSize=10;" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="300" y="160" width="120" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="" style="whiteSpace=wrap;html=1;fontSize=10;fillColor=#647687;fontColor=#ffffff;strokeColor=#314354;dashed=1;" vertex="1" parent="17">
+                    <mxGeometry width="120.00000000000001" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" style="edgeStyle=none;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;fontSize=10;endArrow=none;endFill=0;rounded=0;dashed=1;" edge="1" parent="17" source="18" target="18">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" value="CommandCookFish" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=10;dashed=1;" vertex="1" parent="17">
+                    <mxGeometry x="6.080000000000002" width="110" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" value="&lt;i&gt;+execute()&lt;/i&gt;&lt;br&gt;#mCooker" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=10;dashed=1;" vertex="1" parent="17">
+                    <mxGeometry x="26.08" y="32" width="70" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" value="" style="group;fontSize=10;" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="460" y="160" width="120" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" value="" style="whiteSpace=wrap;html=1;fontSize=10;fillColor=#647687;fontColor=#ffffff;strokeColor=#314354;dashed=1;" vertex="1" parent="22">
+                    <mxGeometry width="120.00000000000001" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" style="edgeStyle=none;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;fontSize=10;endArrow=none;endFill=0;rounded=0;dashed=1;" edge="1" parent="22" source="23" target="23">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" value="CommandCookMeat" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=10;dashed=1;" vertex="1" parent="22">
+                    <mxGeometry x="3.080000000000002" width="115" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="26" value="&lt;i&gt;+execute()&lt;/i&gt;&lt;br&gt;#mCooker" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=10;dashed=1;" vertex="1" parent="22">
+                    <mxGeometry x="26.08" y="32" width="70" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fontSize=10;endArrow=classic;endFill=1;" edge="1" parent="1" source="20" target="13">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=10;endArrow=none;endFill=0;" edge="1" parent="1" source="25">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="440" y="140" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="521" y="140"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="29" value="继承" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=10;" vertex="1" parent="1">
+                    <mxGeometry x="435" y="115" width="40" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=10;endArrow=classic;endFill=1;" edge="1" parent="1" source="30" target="13">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="30" value="" style="rhombus;whiteSpace=wrap;html=1;fontSize=10;" vertex="1" parent="1">
+                    <mxGeometry x="320" y="75" width="15" height="10" as="geometry"/>
+                </mxCell>
+                <mxCell id="33" value="聚合" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=10;" vertex="1" parent="1">
+                    <mxGeometry x="330" y="60" width="40" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;fontSize=10;endArrow=classic;endFill=1;" edge="1" parent="1" source="34">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="240" y="200.14285714285717" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="34" value="" style="rhombus;whiteSpace=wrap;html=1;fontSize=10;" vertex="1" parent="1">
+                    <mxGeometry x="285" y="195" width="15" height="10" as="geometry"/>
+                </mxCell>
+                <mxCell id="35" value="" style="group" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="120" y="160" width="185" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="36" value="" style="whiteSpace=wrap;html=1;" vertex="1" parent="35">
+                    <mxGeometry width="120" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="37" value="Cooker" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="35">
+                    <mxGeometry x="32.5" y="-5" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="38" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.25;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="35" target="36">
+                    <mxGeometry width="100" relative="1" as="geometry">
+                        <mxPoint y="20" as="sourcePoint"/>
+                        <mxPoint x="100" y="20" as="targetPoint"/>
+                        <Array as="points"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="39" value="&lt;span style=&quot;font-size: 12px;&quot;&gt;+cook_fish()&lt;br&gt;+cook_meat()&lt;br&gt;&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=10;" vertex="1" parent="35">
+                    <mxGeometry x="15" y="25" width="95" height="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="42" value="聚合" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=10;" vertex="1" parent="1">
+                    <mxGeometry x="250" y="175" width="40" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;fontSize=10;endArrow=none;endFill=0;" edge="1" parent="1" source="44" target="21">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="280" y="220" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="270" y="283"/>
+                            <mxPoint x="270" y="205"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="44" value="mCooker-&amp;gt;cook_fish()" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;fontSize=10;" vertex="1" parent="1">
+                    <mxGeometry x="300" y="260" width="120" height="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="45" value="mCooker-&amp;gt;cook_meat()" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;fontSize=10;" vertex="1" parent="1">
+                    <mxGeometry x="460" y="255" width="120" height="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="48" value="" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;dashed=1;fontSize=10;endArrow=none;endFill=0;entryX=0.875;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="45">
+                    <mxGeometry width="100" relative="1" as="geometry">
+                        <mxPoint x="550" y="205" as="sourcePoint"/>
+                        <mxPoint x="645" y="205" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="600" y="205"/>
+                            <mxPoint x="600" y="278"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
