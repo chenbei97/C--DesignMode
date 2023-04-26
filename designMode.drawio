@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="zHpIVwNeffbbXztbU5Zh" name="第 1 页">
-        <mxGraphModel dx="649" dy="494" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+        <mxGraphModel dx="603" dy="279" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -490,50 +490,74 @@
                 <mxCell id="195" value="-mInstance;" style="whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
                     <mxGeometry x="320" y="760" width="160" height="20" as="geometry"/>
                 </mxCell>
-                <mxCell id="215" value="" style="group" vertex="1" connectable="0" parent="1">
+                <mxCell id="215" value="" style="group" parent="1" vertex="1" connectable="0">
                     <mxGeometry x="540" y="700" width="410" height="240" as="geometry"/>
                 </mxCell>
-                <mxCell id="196" value="单例模式" style="whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="215">
+                <mxCell id="196" value="单例模式" style="whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="215" vertex="1">
                     <mxGeometry y="100" width="80" height="20" as="geometry"/>
                 </mxCell>
-                <mxCell id="198" value="-mInstance()" style="whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="215">
+                <mxCell id="198" value="-mInstance()" style="whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="215" vertex="1">
                     <mxGeometry x="170" width="240" height="20" as="geometry"/>
                 </mxCell>
-                <mxCell id="199" value="+getInstance()" style="whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="215">
+                <mxCell id="199" value="+getInstance()" style="whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="215" vertex="1">
                     <mxGeometry x="170" y="100" width="240" height="20" as="geometry"/>
                 </mxCell>
-                <mxCell id="214" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="215" source="196" target="199">
+                <mxCell id="214" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="215" source="196" target="199" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="201" value="-Constructor()" style="whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="215">
+                <mxCell id="201" value="-Constructor()" style="whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="215" vertex="1">
                     <mxGeometry x="170" y="20" width="240" height="20" as="geometry"/>
                 </mxCell>
-                <mxCell id="202" value="-Constructor(const Constructor&amp;amp;)" style="whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="215">
+                <mxCell id="202" value="-Constructor(const Constructor&amp;amp;)" style="whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="215" vertex="1">
                     <mxGeometry x="170" y="40" width="240" height="20" as="geometry"/>
                 </mxCell>
-                <mxCell id="204" value="-Constructor operator=(const Constructor&amp;amp;)" style="whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="215">
+                <mxCell id="204" value="-Constructor operator=(const Constructor&amp;amp;)" style="whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="215" vertex="1">
                     <mxGeometry x="170" y="60" width="240" height="20" as="geometry"/>
                 </mxCell>
-                <mxCell id="205" value="+freeInstance()" style="whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="215">
+                <mxCell id="205" value="+freeInstance()" style="whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="215" vertex="1">
                     <mxGeometry x="170" y="120" width="240" height="20" as="geometry"/>
                 </mxCell>
-                <mxCell id="206" value="-class Gabarge" style="whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="215">
+                <mxCell id="206" value="-class Gabarge" style="whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="215" vertex="1">
                     <mxGeometry x="170" y="140" width="240" height="20" as="geometry"/>
                 </mxCell>
-                <mxCell id="207" value="-~Constructor ()" style="whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="215">
+                <mxCell id="207" value="-~Constructor ()" style="whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="215" vertex="1">
                     <mxGeometry x="170" y="80" width="240" height="20" as="geometry"/>
                 </mxCell>
-                <mxCell id="210" value="饿汉式,定义时即创建对象" style="whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="215">
+                <mxCell id="210" value="饿汉式,定义时即创建对象" style="whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="215" vertex="1">
                     <mxGeometry x="170" y="160" width="240" height="20" as="geometry"/>
                 </mxCell>
-                <mxCell id="211" value="懒汉式,需双重判断创建对象" style="whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="215">
+                <mxCell id="211" value="懒汉式,需双重判断创建对象" style="whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="215" vertex="1">
                     <mxGeometry x="170" y="180" width="240" height="20" as="geometry"/>
                 </mxCell>
-                <mxCell id="212" value="嵌套释放资源类可以取消freeInstance手动" style="whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="215">
+                <mxCell id="212" value="嵌套释放资源类可以取消freeInstance手动" style="whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="215" vertex="1">
                     <mxGeometry x="170" y="200" width="240" height="20" as="geometry"/>
                 </mxCell>
-                <mxCell id="213" value="单例类对象之间不要在析构函数互引用" style="whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="215">
+                <mxCell id="213" value="单例类对象之间不要在析构函数互引用" style="whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="215" vertex="1">
                     <mxGeometry x="170" y="220" width="240" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="224" value="" style="group" vertex="1" connectable="0" parent="1">
+                    <mxGeometry y="830" width="320" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="216" value="外观模式" style="whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="224">
+                    <mxGeometry y="20" width="80" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="217" value="外观类" style="whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="224">
+                    <mxGeometry x="120" y="20" width="80" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="222" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="224" source="216" target="217">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="219" value="业务类1" style="whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="224">
+                    <mxGeometry x="240" width="80" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="220" value="业务类2" style="whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="224">
+                    <mxGeometry x="240" y="20" width="80" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="223" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="224" source="217" target="220">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="221" value="业务类3" style="whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="224">
+                    <mxGeometry x="240" y="40" width="80" height="20" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
