@@ -9,3 +9,8 @@
 
 那么状态类可以作为怪物类的构造参数，怪物类持有一个状态类指针，并提供切换状态的函数
 
+--- 快速理解应用 ---
+ClassState作为Class的聚合属性
+ClassState以Class*和其它参数作为构造函数参数
+ClassState提供与Class完全重名的纯虚函数方法，子类可以进行重载实现不同的状态
+对用户而言，使用Class的方法method，内部实际使用的是ClassState.method(this,Args...)
