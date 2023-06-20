@@ -14,7 +14,7 @@ int main()
     return 0;
 }
 /*
-cd C:\Users\22987\Desktop\CPPDesignMode\适配器模式(Adapter)
+cd C:\Users\Lenovo\Desktop\CPPDesignMode\适配器模式(Adapter)
 g++ main.cpp -o main
 .\main
 */

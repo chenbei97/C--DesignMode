@@ -12,14 +12,14 @@
 
 class LogToFile {
     public:
-        void readFile(){};
-        void writeFile(){};
+        void readFile(){printf("read file!\n");};
+        void writeFile(){printf("write file!\n");};
 };
 
 class LogToDB {
     public: 
-        virtual void readDB(){printf("read file!\n");};
-        virtual void writeDB(){printf("write file!\n");};
+        virtual void readDB(){printf("read db!\n");};
+        virtual void writeDB(){printf("write db!\n");};
 };
 
 class LogAdapter : public LogToDB{
@@ -36,7 +36,7 @@ void test()
 {
     LogToFile file;
     LogAdapter ada(&file);
-    printf("----\n");
+    //printf("----\n");
     ada.readDB();
     ada.writeDB();
 }
