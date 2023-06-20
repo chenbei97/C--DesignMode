@@ -9,3 +9,18 @@
 服务员可以添加各种菜品，是聚合关系，服务员通知厨师实际上就是调用了所有菜品的执行动作
 
 所以整个依赖倒转的逻辑是：服务员通知做菜，内部所有做菜的动作执行，做菜的动作执行实际调用了厨师的做菜函数
+
+
+--- 快速理解 ---
+命令容器类委维护一个命令列表，提供添加和移除命令的方法，一次性执行所有命令的方法
+命令类以命令者类为构造参数，提供执行命令的方法，封装了命令者类的执行方法
+命令类可以多态，不同的命令是让命令者做了不同的事情，相应的命令者类也可以多态，命令类可以提供设置不同的命令者方法
+CommadList 
+    List<Command*> mCommands
+    execute() 遍历mCommands执行execute()
+    addCommand(Command1),removeCommand(Command2)
+Command(Executer*) => Command1,Command2
+    setExecuter(Executer*)
+    execute() => Executer.execute()
+Executer() => Executer1,Executer2
+    execute() 
