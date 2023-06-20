@@ -13,3 +13,7 @@
 最后就是容易被误用，叶子节点不能加入子节点，内部函数实现应当提供适当的错误提示或者异常来告知程序员
 
 至少程序编译阶段是无法被发现的，此时可以引入安全组合模式，在抽象类不再提供add和remove接口，在Dir保留，File不再实现
+
+--- 快速理解 ---
+File,Dir共同继承FileSystem，FileSystem提供共同的方法，例如isDir,showName等
+对于Dir有自己的add/remove方法，以及自己的数据List<FileSystem*>用于存储
