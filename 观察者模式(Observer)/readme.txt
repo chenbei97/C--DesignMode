@@ -19,15 +19,19 @@ Notify的子类实现定义在ChatLineNotify.h中
 
 观察者模式的其它场景：
 1）某个玩家被攻击，同一家族的玩家都去营救
-    Fighterx->beAttacked(Notify*);
-        Notify->notify(Fighter*f);
+    Fighterx->beAttacked(Notify*); 借助通知者发布消息
+        Notify->notify(Fighter*f); 通知者遍历维护的玩家列表除自身外都进行通知
             flist = Notify.mFamilyList[f->getFamilyId()] 同一家族的所有成员
             for(auto fx: flist) fx->assist(f); 其它玩家fx去营救此玩家f
 2）数据表的数据和各种图（饼图、折线图、直方图等）有关联关系
-    DataSheet->changeData(); 数据表一旦改变
-    Chartx->setDataSheet(DataSheet*); 更新数据表
-        clist = DataSheet.mChartList 获取数据表维护的图列表
-        for (auto cx: clist) cx->replot(); 每张图重新绘制
+    DataSheet->changeData(Notify*); 数据表发生改变,借助通知者更新数据表
+        Notify*->setDataSheet(DataSheet*); 通知者遍历所有图列表去更新图
+            clist = DataSheet.mChartList 获取数据表维护的图列表
+            for (auto cx: clist) cx->replot(); 每张图重新绘制
 3）炮塔攻击指定范围内(30m)的所有玩家，30m内的玩家可以随时加入和移除，炮塔维护一个30m的玩家列表即可
 
 
+--- 快速理解 ---
+观察者可以多态，都具备notify方法去通知其他观察者，该方法Notifier*和要通知的信息构建，内部调用Notifier.notify(this,info)
+观察者的实例都被通知者的观察者列表依据编号ID维护mao<int,list<Observer*>>,notify方法遍历该列表来给其他观察者通知
+通知者提供add,remove方法用于添加和移除观察者
