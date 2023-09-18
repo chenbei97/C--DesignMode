@@ -6,20 +6,20 @@
  * @FilePath: \CPPDesignMode\适配器模式(Adapter)\Adapter.h
  * @Description: 适配器模式
  */
-#ifndef Adapter_H
-#define Adapter_H
+#ifndef ObjectAdapter_H
+#define ObjectAdapter_H
 #include "stdio.h"
 
 class LogToFile {
     public:
-        void readFile(){};
-        void writeFile(){};
+        void readFile(){printf("read file!\n");};
+        void writeFile(){printf("write file!\n");};
 };
 
 class LogToDB {
     public: 
-        virtual void readDB(){printf("read file!\n");};
-        virtual void writeDB(){printf("write file!\n");};
+        virtual void readDB(){printf("read db!\n");};
+        virtual void writeDB(){printf("write db!\n");};
 };
 
 class LogAdapter : public LogToDB{
@@ -32,12 +32,12 @@ class LogAdapter : public LogToDB{
         void writeDB() override {mFile->writeFile();}
 };
 
-void test()
+static void test_objada()
 {
     LogToFile file;
     LogAdapter ada(&file);
-    printf("----\n");
     ada.readDB();
     ada.writeDB();
+    printf("-------\n");
 }
 #endif
