@@ -36,6 +36,10 @@ static void test_objada()
 {
     LogToFile file;
     LogAdapter ada(&file);
+<<<<<<< HEAD:适配器模式(Adapter)/ObjectAdapter.h
+=======
+    //printf("----\n");
+>>>>>>> 74598e1f688298d889b0d8e0983b7f3e73f018dc:适配器模式(Adapter)/Adapter.h
     ada.readDB();
     ada.writeDB();
     printf("-------\n");
