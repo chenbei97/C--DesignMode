@@ -1,11 +1,12 @@
-/*
+/*** 
  * @Author: chenbei97 chenbei_electric@163.com
  * @Date: 2023-06-20 17:06:26
  * @LastEditors: chenbei97 chenbei_electric@163.com
- * @LastEditTime: 2023-06-20 17:25:22
- * @FilePath: \CPPDesignMode\适配器模式(Adapter)\Adapter.h
- * @Description: 适配器模式
+ * @LastEditTime: 2023-09-18 15:00:44
+ * @FilePath: \CPPDesignMode\适配器模式(Adapter)\ObjectAdapter.h
+ * @Copyright (c) 2023 by ${chenbei}, All Rights Reserved. 
  */
+
 #ifndef ObjectAdapter_H
 #define ObjectAdapter_H
 #include "stdio.h"
@@ -36,12 +37,8 @@ static void test_objada()
 {
     LogToFile file;
     LogAdapter ada(&file);
-<<<<<<< HEAD:适配器模式(Adapter)/ObjectAdapter.h
-=======
-    //printf("----\n");
->>>>>>> 74598e1f688298d889b0d8e0983b7f3e73f018dc:适配器模式(Adapter)/Adapter.h
+    printf("----\n");
     ada.readDB();
     ada.writeDB();
-    printf("-------\n");
 }
 #endif
