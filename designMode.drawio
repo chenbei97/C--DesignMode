@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="zHpIVwNeffbbXztbU5Zh" name="第 1 页">
-        <mxGraphModel dx="643" dy="330" grid="1" gridSize="5" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+        <mxGraphModel dx="643" dy="509" grid="1" gridSize="5" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -1106,6 +1106,57 @@
                         <mxPoint x="180" y="9.829999999999927" as="sourcePoint"/>
                         <mxPoint x="220" y="9.829999999999927" as="targetPoint"/>
                     </mxGeometry>
+                </mxCell>
+                <mxCell id="449" value="" style="group" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="540" y="1840" width="460" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="427" value="访问者模式" style="whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="449">
+                    <mxGeometry y="60" width="80" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="428" value="被访问者基类" style="whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="449">
+                    <mxGeometry x="100" y="100" width="80" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="448" style="edgeStyle=none;html=1;entryX=0;entryY=0.75;entryDx=0;entryDy=0;startArrow=none;startFill=0;endArrow=classic;endFill=1;" edge="1" parent="449" source="427" target="428">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="429" value="访问者基类" style="whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="449">
+                    <mxGeometry x="100" y="20" width="80" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="447" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=none;startFill=0;endArrow=classic;endFill=1;" edge="1" parent="449" source="427" target="429">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="430" value="visit_v1(Apple*)&lt;br&gt;...&lt;br&gt;visit_vn(Banana*)" style="whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="449">
+                    <mxGeometry x="220" width="100" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="432" style="edgeStyle=none;html=1;startArrow=none;startFill=0;endArrow=classic;endFill=1;" edge="1" parent="449" source="429" target="430">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="437" style="edgeStyle=none;html=1;startArrow=none;startFill=0;endArrow=classic;endFill=1;" edge="1" parent="449" source="433" target="430">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="433" value="访问者子类" style="whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="449">
+                    <mxGeometry x="380" y="20" width="80" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="434" value="被访问者子类" style="whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="449">
+                    <mxGeometry x="380" y="100" width="80" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="438" value="override" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="449">
+                    <mxGeometry x="320" y="10" width="65" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="439" value="accept(Visitor*e)" style="whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="449">
+                    <mxGeometry x="220" y="100" width="100" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="440" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=none;startFill=0;endArrow=classic;endFill=1;" edge="1" parent="449" source="428" target="439">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="442" style="edgeStyle=none;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;startArrow=none;startFill=0;endArrow=classic;endFill=1;" edge="1" parent="449" source="434" target="439">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="443" value="override" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="449">
+                    <mxGeometry x="320" y="90" width="65" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="446" value="e-&amp;gt;visit_vn(this)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="449">
+                    <mxGeometry x="300" y="75" width="105" height="30" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
