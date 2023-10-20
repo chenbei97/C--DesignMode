@@ -2,7 +2,7 @@
  * @Author: chenbei97 chenbei_electric@163.com
  * @Date: 2023-09-18 16:28:58
  * @LastEditors: chenbei97 chenbei_electric@163.com
- * @LastEditTime: 2023-09-19 11:12:00
+ * @LastEditTime: 2023-10-20 17:30:48
  * @FilePath: \CPPDesignMode\访问者模式(Visitor)\Visitor.h
  * @Copyright (c) 2023 by ${chenbei}, All Rights Reserved. 
  */
@@ -81,3 +81,9 @@ inline void Banana::accept(Visitor * e) {
     e->visit_banana(this); 
 };
 #endif
+
+/*
+    使用者类以参观者类为构造函数 A(B*),有个setB(B*)方法
+    访问者类定义访问不同使用者子类的方法 B: visit_A1(A1*);visit_A2(A2*)
+    A的子类A1->setB(B*b)=>b->visit_A1()
+*/
