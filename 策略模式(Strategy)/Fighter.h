@@ -1,3 +1,11 @@
+/*** 
+ * @Author: chenbei97 chenbei_electric@163.com
+ * @Date: 2023-06-08 15:09:24
+ * @LastEditors: chenbei97 chenbei_electric@163.com
+ * @LastEditTime: 2023-10-20 17:12:00
+ * @FilePath: \CPPDesignMode\策略模式(Strategy)\Fighter.h
+ * @Copyright (c) 2023 by ${chenbei}, All Rights Reserved. 
+ */
 #ifndef _Fighter_H
 #define _Fighter_H
 #include "stdio.h"
